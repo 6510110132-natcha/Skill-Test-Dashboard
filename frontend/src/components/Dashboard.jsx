@@ -5,7 +5,7 @@ export default function Dashboard() {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8000/employees')
+    axios.get('https://skill-test-dashboard-1.onrender.com/employees')
       .then(res => setEmployees(res.data));
   }, []);
 
